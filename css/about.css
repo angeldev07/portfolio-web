@@ -1,0 +1,118 @@
+
+:root{
+    --titles-color: #fafafa;
+    --color: #f7e9e9;
+    --font-size: 1rem;
+}
+
+
+.header{
+    height: auto;
+}
+
+.about-me{
+    padding: 1em;
+}
+
+.card-img img{
+    width: 100%;
+    border-radius:  5px;
+}
+
+
+/* Card info */
+.card-info{
+    margin: 1em 0;
+    color: var(--color);
+}
+
+.card-title{
+    --font-size: 2rem;
+    font-size: var(--font-size);
+}
+
+.card-desc{
+    --font-size: .9rem;
+    font-size: var(--font-size);
+    line-height: 1.7;
+}
+
+strong{
+    color: #f59211;
+}
+
+
+/* Sections title styles */
+.sections-title{
+    padding: 1em;
+    color: var(--color);
+}
+
+/* Cards container */
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 100%;
+}
+
+.tech-title{
+    color: var(--color);
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    gap: .5em;
+    padding: 1.5em 0;
+    width: 100%;
+}
+
+.tech-img svg{
+    width: 3rem;
+    margin-bottom: .5em;
+}
+/* Color to icons */
+
+.cards-front .card:first-child{
+    fill: #E34F26;
+}
+
+.cards-front .card:nth-child(2){
+    fill: #1572B6;
+}
+.cards-front .card:last-child{
+    fill: #F7DF1E;
+}
+
+.cards-back .card:first-child{
+    fill: #3776AB;
+}
+
+.cards-back .card:nth-child(2){
+    fill:#339933;
+}
+
+/* Card container */
+.card{
+    background-color: #083052;
+    padding: 1em 1em .8em;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--color);
+    font-size: .8rem;
+    width: 90px;
+}
+
+
+
+
+@media screen and (min-width: 820px) {
+    .about-me{
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+
+}
