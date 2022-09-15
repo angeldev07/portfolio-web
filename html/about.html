@@ -18,13 +18,13 @@
             <a href="../index.html" class="logo">Angel Garcia</a>
             <ul class="nav-list">
                 <li class="list-item">
-                    <a href="#" class="nav-link">About me</a>
-                </li>
-                <li class="list-item">
-                    <a href="#" class="nav-link">Investigation</a>
+                    <a href="#about-me" class="nav-link">About me</a>
                 </li>
                 <li class="list-item">
                     <a href="#" class="nav-link">Projects</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="nav-link">Contact me</a>
                 </li>
             </ul>
             <div class="icons-menu">
@@ -35,8 +35,8 @@
     </header>
 
 
-    <main class="main">
-        <section class="wrapper about-me">
+    <main class="main wrapper">
+        <section class=" about-me" id="about-me">
             <div class="card-personal">
                <div class="card-img">
                 <figure>
@@ -49,9 +49,13 @@
                 <p class="card-desc">Estudiante de sexto semestre de ingenieria de Sistemas de la <strong>Universidad Francisco de Paula de Santander</strong>. Me apasiona mucho programar, en especial la programación web ¡Mi objetivo es llegar a ser un <strong>fullstack developer con el entorno de desarrollo de Javascript</strong>! Actualmente lo sigo aprendiendo y mi proxima meta será aprender las tecnologías de <strong>React y Next.JS</strong>, así como del backend: <strong>Node.js y Express</strong> por mencionar algunas. </p>
             </div>
         </section>
-        <section class="wrapper tech">
-            <h2 class="sections-title">Conocimientos</h2>
-            <div class="cards-container">
+        <section class="tech">
+            <!-- <h2 class="sections-title">Conocimientos</h2> -->
+            <div class="tab">
+                <button class="tab-btn" id="knowledge">Conocimientos</button>
+                <button class="tab-btn" id="skills">Soft skills</button>
+            </div>
+            <section class="cards-container">
                 <div>
                     <h3 class="tech-title">Frontend</h3>
                     <div class="cards cards-front">
@@ -101,10 +105,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <section class = "skills-container hidden"> 
+            </section>
         </section>
     </main>
 
     <script src="../main.js"></script>
+    <script src="../js/about.js"></script>
 </body>
 </html>

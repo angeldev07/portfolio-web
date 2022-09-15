@@ -10,10 +10,6 @@
     height: auto;
 }
 
-.about-me{
-    padding: 1em;
-}
-
 .card-img img{
     width: 100%;
     border-radius:  5px;
@@ -47,13 +43,43 @@ strong{
     padding: 1em;
     color: var(--color);
 }
+/* Tab */
+.tab{
+    background-color: #f59211;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
+    height: 4rem;
+
+}
+.tab-btn{
+    background-color: transparent;
+    display: block;
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 100%;
+    color: var(--color);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.tab-btn:first-child{
+    border-right: 1px solid #fff;
+}
 
 /* Cards container */
 
+
 .cards-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    transform: scale(1);
+    transition: transform .3s;
 }
 
 .tech-title{
@@ -63,7 +89,7 @@ strong{
 
 .cards{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly   ;
     gap: .5em;
     padding: 1.5em 0;
     width: 100%;
@@ -105,9 +131,42 @@ strong{
     width: 90px;
 }
 
+/* Skill section */
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    padding: 0 0 1em;
+    width: 100%;
+  }
+  
+  .skills-container .card{
+    padding: 2em 1em 1em;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+   
+  }
+  
+  .card-img svg{
+    fill: #acfcfc;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .skills-container .card-title{
+    font-size: 1.5rem;
+    margin: .5em 0;
+  }
+  
+  .description{
+     margin: .5em 0;
+  }
 
 
-
+  .hidden{
+    display: none;
+}
 @media screen and (min-width: 820px) {
     .about-me{
         display: flex;
@@ -115,4 +174,15 @@ strong{
         gap: 2em;
     }
 
+    .cards-container{
+        padding-bottom: 1rem;
+    }
 }
+
+@media screen and (min-width:1000px) {
+    .card-title{
+        --font-size: 3rem;
+    }
+}
+
+
